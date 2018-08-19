@@ -60,7 +60,7 @@ class  IncidentList extends React.Component  {
     const items = this.state.incidents.map( (inc) => {
         return <ListItem button key={inc.id}>
         <Avatar>
-          {inc.trip}
+          {inc.trip || "X7"} 
         </Avatar>
           <ListItemText primary={inc.feeling} secondary={inc.happening} />
         </ListItem>
